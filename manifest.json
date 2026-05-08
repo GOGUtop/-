@@ -1,12 +1,12 @@
 {
-  "display_name": "MoA Collab - 多模型协作",
-  "loading_order": 10,
-  "requires": [],
-  "optional": [],
-  "js": "index.js",
-  "css": "style.css",
-  "author": "YourName",
-  "version": "1.0.0",
-  "homePage": "https://github.com/YourName/ST-MoA-Collab",
-  "auto_update": true
+    "display_name": "MoA Collab 多模型协作",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "YourName",
+    "version": "1.0.0",
+    "homePage": "",
+    "auto_update": true
 }
