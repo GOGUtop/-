@@ -1,0 +1,38 @@
+<div id="moa_collab_settings" class="extension_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>🤖 MoA 多模型协作</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <label class="checkbox_label">
+                <input type="checkbox" id="moa_enabled"> 启用多模型协作
+            </label>
+
+            <label>协作模式：
+                <select id="moa_mode" class="text_pole">
+                    <option value="sequential">串行精修（A→B→C 接力改稿）</option>
+                    <option value="parallel">并行汇总（多人同写+聚合器整合）</option>
+                </select>
+            </label>
+
+            <label>轮次（串行模式）：
+                <input type="number" id="moa_rounds" min="1" max="5" value="2" class="text_pole">
+            </label>
+
+            <label>聚合器（并行模式）：
+                <select id="moa_aggregator" class="text_pole"></select>
+            </label>
+
+            <hr>
+            <h4>🧩 协作 Agent 列表</h4>
+            <div id="moa_agent_list"></div>
+            <button id="moa_add_agent" class="menu_button">➕ 添加 Agent</button>
+
+            <small style="opacity:.7;display:block;margin-top:10px;">
+                支持任何 OpenAI 兼容接口（OpenAI / DeepSeek / Claude代理 / Ollama / OneAPI 等）。<br>
+                Ollama 用户：URL 填 <code>http://localhost:11434/v1</code>
+            </small>
+        </div>
+    </div>
+</div>
